@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (global.reactInMarkdown = factory());
-}(this, (function () { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+  typeof define === 'function' && define.amd ? define(['exports'], factory) :
+  (factory((global.reactInMarkdown = global.reactInMarkdown || {})));
+}(this, (function (exports) { 'use strict';
 
 var matchPropRegex = / ?([^,]*) ?= ?([^,]*),? ?/g;
 
@@ -152,6 +152,8 @@ var renderCustomComponents = function renderCustomComponents(props, customCompon
   return customLinkComponent ? customLinkComponent(props) : link(props);
 };
 
-return renderCustomComponents;
+exports.renderCustomComponents = renderCustomComponents;
+
+Object.defineProperty(exports, '__esModule', { value: true });
 
 })));

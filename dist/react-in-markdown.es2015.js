@@ -146,4 +146,4 @@ var renderCustomComponents = function renderCustomComponents(props, customCompon
   return customLinkComponent ? customLinkComponent(props) : link(props);
 };
 
-export default renderCustomComponents;
+export { renderCustomComponents };

@@ -1,7 +1,7 @@
 import {getPropsObject} from './src/utils';
 import {link} from './src/components';
 
-const renderCustomComponents = (props, customComponents, customLinkComponent) => {
+export const renderCustomComponents = (props, customComponents, customLinkComponent) => {
   const {children, href} = props;
   const foundComponent = customComponents[children[0]];
   if (foundComponent) {
@@ -10,5 +10,3 @@ const renderCustomComponents = (props, customComponents, customLinkComponent) =>
   }
   return customLinkComponent ? customLinkComponent(props) : link(props);
 }
-
-export default renderCustomComponents;

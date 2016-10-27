@@ -1,5 +1,7 @@
 'use strict';
 
+Object.defineProperty(exports, '__esModule', { value: true });
+
 var matchPropRegex = / ?([^,]*) ?= ?([^,]*),? ?/g;
 
 var get = function get(object, property, receiver) {
@@ -148,4 +150,4 @@ var renderCustomComponents = function renderCustomComponents(props, customCompon
   return customLinkComponent ? customLinkComponent(props) : link(props);
 };
 
-module.exports = renderCustomComponents;
+exports.renderCustomComponents = renderCustomComponents;
