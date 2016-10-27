@@ -1,8 +1,10 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-  typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (factory((global.reactInMarkdown = global.reactInMarkdown || {})));
-}(this, (function (exports) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('react')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'react'], factory) :
+  (factory((global.reactInMarkdown = global.reactInMarkdown || {}),global.React));
+}(this, (function (exports,React) { 'use strict';
+
+React = 'default' in React ? React['default'] : React;
 
 var matchPropRegex = / ?([^,]*) ?= ?([^,]*),? ?/g;
 
@@ -133,9 +135,9 @@ var link = function link(_ref) {
   var href = _ref.href;
   var title = _ref.title;
   return React.createElement(
-    "a",
+    'a',
     { href: href, title: title },
-    " ",
+    ' ',
     children
   );
 };

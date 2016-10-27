@@ -1,3 +1,5 @@
+import React from 'react';
+
 var matchPropRegex = / ?([^,]*) ?= ?([^,]*),? ?/g;
 
 var get = function get(object, property, receiver) {
@@ -127,9 +129,9 @@ var link = function link(_ref) {
   var href = _ref.href;
   var title = _ref.title;
   return React.createElement(
-    "a",
+    'a',
     { href: href, title: title },
-    " ",
+    ' ',
     children
   );
 };

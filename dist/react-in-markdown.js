@@ -2,6 +2,10 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+
+var React = _interopDefault(require('react'));
+
 var matchPropRegex = / ?([^,]*) ?= ?([^,]*),? ?/g;
 
 var get = function get(object, property, receiver) {
@@ -131,9 +135,9 @@ var link = function link(_ref) {
   var href = _ref.href;
   var title = _ref.title;
   return React.createElement(
-    "a",
+    'a',
     { href: href, title: title },
-    " ",
+    ' ',
     children
   );
 };

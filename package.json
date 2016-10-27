@@ -57,5 +57,11 @@
       "node_modules",
       "src"
     ]
+  },
+  "dependencies": {
+    "react": "^15.3.2"
+  },
+  "peerDependencies": {
+    "markdown-to-react-components": "0.2.1"
   }
 }
