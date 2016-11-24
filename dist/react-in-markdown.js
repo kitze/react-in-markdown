@@ -119,11 +119,10 @@ var getRegexMatches = function getRegexMatches(string, regexExpression, callback
 var getPropsObject = function getPropsObject(propsString) {
   var object = {};
   getRegexMatches(propsString, matchPropRegex, function (_ref) {
-    var _ref2 = slicedToArray(_ref, 3);
-
-    var fullMatch = _ref2[0];
-    var key = _ref2[1];
-    var value = _ref2[2];
+    var _ref2 = slicedToArray(_ref, 3),
+        fullMatch = _ref2[0],
+        key = _ref2[1],
+        value = _ref2[2];
 
     object[key] = value;
   });
@@ -131,9 +130,9 @@ var getPropsObject = function getPropsObject(propsString) {
 };
 
 var link = function link(_ref) {
-  var children = _ref.children;
-  var href = _ref.href;
-  var title = _ref.title;
+  var children = _ref.children,
+      href = _ref.href,
+      title = _ref.title;
   return React.createElement(
     'a',
     { href: href, title: title },
@@ -143,15 +142,15 @@ var link = function link(_ref) {
 };
 
 var renderCustomComponents = function renderCustomComponents(props, customComponents, customLinkComponent) {
-  var children = props.children;
-  var href = props.href;
+  var children = props.children,
+      href = props.href;
 
   var foundComponent = customComponents[children[0]];
   if (foundComponent) {
     var propsObject = getPropsObject(href);
-    return foundComponent(propsObject);
+    return React.createElement(foundComponent, propsObject);
   }
-  return customLinkComponent ? customLinkComponent(props) : link(props);
+  return customLinkComponent ? React.createElement(customLinkComponent, props) : React.createElement(link, props);
 };
 
 exports.renderCustomComponents = renderCustomComponents;
