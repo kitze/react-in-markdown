@@ -1,7 +1,11 @@
-# react-in-markdown
-v0.0.1 🎉 - by [@thekitze](http://kitze.io)
+# react-in-markdown (DEPRECATED)
+This library is deprecated and won't be supported anymore. Please use [Marksy](https://github.com/cerebral/marksy) or [MDX](https://github.com/mdx-js/mdx).
 
-> ⚠️ Warning: This is not a standalone library, it should be used along with the [markdown-to-react-components](https://github.com/christianalfoni/markdown-to-react-components) library
+Made by [@thekitze](https://twitter.com/thekitze)
+
+### Usage
+
+It should be used along with the [markdown-to-react-components](https://github.com/christianalfoni/markdown-to-react-components) library
 
 ### What does it do?
 
