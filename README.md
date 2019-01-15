@@ -1,7 +1,15 @@
+### 🙋‍♂️ Made by [@thekitze](https://twitter.com/thekitze)  
+
+### Other projects:
+- 🏫 [React Academy](https://reactacademy.io) - Interactive React and GraphQL workshops
+- 💌 [Twizzy](https://twizzy.app) - A standalone app for Twitter DM
+- 💻 [Sizzy](https://sizzy.co) - A tool for testing responsive design on multiple devices at once
+- 🤖 [JSUI](https://github.com/kitze/JSUI) - A powerful UI toolkit for managing JavaScript apps
+
+---
+
 # react-in-markdown (DEPRECATED)
 This library is deprecated and won't be supported anymore. Please use [Marksy](https://github.com/cerebral/marksy) or [MDX](https://github.com/mdx-js/mdx).
-
-Made by [@thekitze](https://twitter.com/thekitze)
 
 ### Usage
 
