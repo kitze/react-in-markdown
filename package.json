@@ -59,7 +59,7 @@
     ]
   },
   "dependencies": {
-    "react": "^15.3.2"
+    "react": "^19.2.5"
   },
   "peerDependencies": {
     "markdown-to-react-components": "0.2.1"
